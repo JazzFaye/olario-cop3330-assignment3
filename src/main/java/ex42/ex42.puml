@@ -1,0 +1,12 @@
+@startuml
+Class App{
+- InputFile : String {readOnly}
+- Name : ArrayList<String>
+----
++ main(args : String[]) : void
++ ReadFile(name_list : String) : void
++ PrintData(name : ArrayList<String>) : void
+
+}
+
+@enduml

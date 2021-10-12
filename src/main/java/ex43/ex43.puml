@@ -1,0 +1,29 @@
+@startuml
+
+Class App{
+- CSS : String
+- Jss : String
+- Name : String
+- Site : String
+- sc : Scanner {readOnly}
+---
++ main(String[] args : String[]) : void
++ user_input() : void
++ Output() : void
+}
+Class CreateWebsite{
+~ css : String
+~ js : String
+~ html : String
+~ website : String
+- InputFile : String {readOnly}
+---
++ Site_Name(name : String) : String
++ HTML (name : String) : String
++ JS_FILE(name : String, Script : String) : String
++ CS_FILE(name: String, Script : String) : String
++ WriteHTML(Website : String, Author : String) void
+}
+App <-- CreateWebsite
+
+@enduml

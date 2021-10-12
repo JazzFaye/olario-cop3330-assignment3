@@ -1,0 +1,11 @@
+@startuml
+Class App{
+- InputFile : String {readOnly}
+---
++ main(args : String[]) : void
++ ReadFile() : ArrayList<String>
++ Count(Input : ArrayList<String> , Search : String) : int
++ FindWords(Input : ArrayList<String>) : ArrayList<String>
++Output(Words : ArrayList<String>, Input_Array : ArrayList<String>) : void
+}
+@enduml

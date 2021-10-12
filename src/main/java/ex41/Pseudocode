@@ -1,0 +1,32 @@
+Class App
+
+    Create static ArrayList to store names from file
+    Create static path for InputFile
+    Create static path for OutputFile
+
+
+    method main()
+            Call ReadFile Function to read the input.txt file and all the names int it
+            Call Sort Function to rearrange the names and sort them alphabetically
+            Call WriteFile to write the sorted name to the output.txt file
+    end method
+
+
+    method ReadFile()
+            Initialize a file reader to read and pass the string filename
+            Use while loop to read each name of the file until it reaches the end
+    end method
+
+
+    method WriteFile()
+    		Initialize a file writer and pass the string filename
+    		Write the header to the output.txt file
+    		Use for loop to write and print new sorted names to the output.txt file
+    end method
+
+
+    method Sort()
+            Sort the names alphabetically from the input.txt file
+    end method
+
+end class

@@ -1,0 +1,12 @@
+@startuml
+Class App{
+- InputFile : String {readOnly}
+- sc : Scanner {readOnly}
+----
++ main(args : String[]) : void
++ user_input() : void
++ ReadFile(inputFile: String) : ArrayList<Map<String, Object>>
++ ProductSearch(list : ArrayList<Map<String, Object>>, name : String) : String
+}
+
+@enduml

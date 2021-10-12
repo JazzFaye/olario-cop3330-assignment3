@@ -1,0 +1,40 @@
+Class App
+
+    static Scanner to ger user input
+    static String path for FileInput
+
+    main method()
+          Call user_input method request the user for input and display the Name, Price and Quantity of the Product
+    end of method
+
+
+    method user_input()
+        List of maps of items read from JSON file
+        Use do - while loop to ask user for the product until it is located
+            do
+                String name = Get Input
+                Call Product search method to see if the user's input are in the input file
+            while "Sorry, that product was not found in our inventory."
+    end of method
+
+
+    method ReadFile()
+        Initialize a file reader to read and pass the string filename
+        Parse a .json file to file element
+        Turn file element into an Object to get data from it
+        Get data into different variables
+            String name
+            double price
+            int quantity
+    end of method
+
+    method ProductSearch()
+        Use for loop to search the file until it finds the product
+        Cast object name to string to comparison
+                if product == name
+                    Print the name, price and quantity
+                else
+                    Print Sorry, that product was not found in our inventory
+    end of method
+
+End of Class

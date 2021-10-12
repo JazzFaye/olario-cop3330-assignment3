@@ -1,0 +1,12 @@
+@startuml
+Class App{
+- InputFile : String
+- OutputFile : Sting
+- Names : ArrayList<String>
+----
++ main(args : String[]) : void
++ ReadFile(name_list : String) :void
++ WriteFile(names: ArrayList<String>) : void
++ Sort() : void
+}
+@enduml

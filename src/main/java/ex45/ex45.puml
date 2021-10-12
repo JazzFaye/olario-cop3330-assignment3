@@ -1,0 +1,16 @@
+@startuml
+Class App{
+- text : String
+---
++ main(args : String[]) : void
+}
+Class Process{
+- InputFile : String {readOnly}
+- sc : Scanner {readOnly}
+---
++ ReadFile(File : String) : String
++ WriteFile(File : String) : void
++ Change(text : String) : String
+}
+App <-- Process
+@enduml

@@ -1,0 +1,94 @@
+Class App
+
+    Create static Scanner to get user input
+    Create static String Site
+                  String Name
+                  String Jss
+                  String Css
+
+
+    main method()
+        Call the user_input method to request the user for input
+        Call Output method to display the output
+    end of method
+
+
+    method user_input()
+        Site name = Get input
+        Author    = Get input
+        JavaScript= Get input
+        Css       = Get input
+    end of method
+
+
+    method Output()
+        Call class CreateWebsite
+        Call method for user input and pass the string Site name to create folder
+        Call method HTML and pass the String Site name to create html file
+        Call method for JS_File and pass the Strings Site name and JavaScript to create folder
+        Call method for CS_File and pass the Strings Site and Css to create folder
+        Call the method WriteHTML and pass the Strings Site name and Author to create html file
+    end of method
+
+end of Class App
+
+
+Class CreateWebsite
+
+    Create static path for InputFile
+    String website
+    String html
+    String js
+    String cs
+
+
+    method Site_Name()
+        String output
+        Initialize a file reader to read and pass the string filename
+        Add output to confirm folder creation and testing
+            if string filename does not exist
+                Print confirmation file has been created
+            else
+                Print error occurred
+    end of method
+
+
+    method JS_File()
+        String output
+        Initialize a file reader to read and pass the string filename
+            if Get input == y
+                if string filename does not exist
+                    Print confirmation file has been created
+                else
+                    Print error occurred
+            else if Get input == n
+                    Print blank String
+    end of method
+
+
+    method CS_FILE()
+        String output
+        Initialize a file reader to read and pass the string filename
+             if Get input == y
+                  if string filename does not exist
+                       Print confirmation file has been created
+                  else
+                       Print error occurred
+             else if Get input == n
+                  Print blank String
+    end of method
+
+
+    method WriteHTML
+        Initialize a file writer
+        Write syntax for HTML alone with the site name and author
+    end of method
+
+end of Class Create Website
+
+
+
+
+
+
+

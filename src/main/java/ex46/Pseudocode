@@ -1,0 +1,30 @@
+Class App
+
+    static String path for FileInput
+
+    main method()
+        Call ReadFile Method to read the input.txt file
+        Call FindWord Method and pass ReadFile Method to read and look for the words in the input.txt file
+        Call Output Method and pass ReadFile and FindWord Methods to display the output
+    end method
+
+    ReadFile method()
+        Create ArrayList to store the words from the input.txt file
+        Call Read Function to read the txt file
+        Use while loop to add each list line by line until the loop ends
+    end method
+
+    Count method()
+        Integer output
+        Use while loop to count every single line until it ends
+    end method
+
+    FindWords method()
+        Use ArrayList to store the words found in the input.txt file
+        Use for loop to read every single line it can find in the input.txt file
+    end method
+
+    Output method()
+        Integer CountWords
+        Use for loop to count the frequency on each word of the input.txt file and changes each word with "*"
+    end method

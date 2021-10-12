@@ -1,0 +1,19 @@
+Class App
+    Create static ArrayList to store names from file
+    Create static path for InputFile
+
+    method main()
+        Call ReadFile Function to read input.txt file and everything in it
+        Call PrintData on the array list to display the output
+
+    method ReadFile()
+        Initialize a file reader that reads and pass the string filename
+        Use new ArrayList to recall data
+        Use while loop to read each name and salary of the file until it reaches the end
+
+    method PrintData()
+        Print the header
+        Initialize String array to store the formatted data
+        Use for loop to format each line from the input.txt file with spaces and separates the data by comma
+
+
